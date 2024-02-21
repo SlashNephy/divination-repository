@@ -1,0 +1,20 @@
+{
+  "name": "functions",
+  "version": "0.0.0",
+  "repository": "https://github.com/SlashNephy/Divination",
+  "license": "MIT",
+  "author": "SlashNephy <spica@starry.blue>",
+  "scripts": {
+    "build": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20240208.0",
+    "typescript": "5.3.3",
+    "wrangler": "3.28.3"
+  },
+  "packageManager": "yarn@4.1.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
+
