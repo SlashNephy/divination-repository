@@ -98,7 +98,7 @@ export function PluginList({ isTesting }: PluginListProps): React.JSX.Element {
             <Table.Row key={plugin.InternalName}>
               <Table.Cell>
                 <Link
-                  href={`https://github.com/SlashNephy/Divination/tree/master/packages/Plugins/${plugin.InternalName}`}
+                  href={`https://github.com/SlashNephy/Divination/tree/master/${plugin.InternalName}`}
                   target="_blank"
                 >
                   {plugin.InternalName}
