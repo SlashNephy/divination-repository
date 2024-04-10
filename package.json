@@ -45,7 +45,7 @@
     ]
   },
   "dependencies": {
-    "@nextui-org/react": "1.0.0-beta.13",
+    "@nextui-org/react": "1.0.0-beta.9-dbg2",
     "@tabler/icons-react": "2.47.0",
     "framer-motion": "10.18.0",
     "i18next": "23.8.3",
