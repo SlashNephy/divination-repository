@@ -32,13 +32,13 @@ export const english: Translation = {
 }
 
 export const japanese: Translation = {
-  TopDescription: '<0>xiv.starry.blue</0> は XivLauncher 用の Dalamud プラグインリポジトリです。',
+  TopDescription: '<0>xiv.starry.blue</0> は XIVLauncher 用の Dalamud プラグインリポジトリです。',
   HowToUseHeader: '使い方',
   HowToUseDescription: 'XIVLauncher で使用できるようにするには、以下のURLをリポジトリ リストに追加してください。',
   DisclaimerHeader: '免責事項',
   // eslint-disable-next-line xss/no-mixed-html
   DisclaimerDescription:
-    'このリポジトリで配布しているプラグインは自己責任で使用してください。<br />私たちは、このリポジトリに含まれるプラグインの使用によって発生した損害に対して、一切の責任を負いません。',
+    'このリポジトリで配布しているプラグインはすべて、自己責任で使用してください。<br />私たちは、このリポジトリに含まれるプラグインの使用によって発生した損害に対して、一切の責任を負いません。',
   PluginListHeader: 'プラグイン一覧',
   PluginListDescription: 'このリポジトリで配布しているプラグインの一覧です。',
   PluginListShowTestingVersions: '開発中のバージョンを表示する',

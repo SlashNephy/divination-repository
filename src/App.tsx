@@ -1,4 +1,4 @@
-import { Badge, Card, Checkbox, Col, Container, Link, Loading, Row, Spacer, Table, Text } from '@nextui-org/react'
+import { Anchor, Badge, Card, Checkbox, Code, Container, Group, Loader, Space, Stack, Table, Text, Title } from '@mantine/core'
 import { IconAlertTriangleFilled, IconBook, IconPuzzle } from '@tabler/icons-react'
 import React, { Suspense, useState } from 'react'
 import { Trans, useTranslation } from 'react-i18next'
@@ -10,66 +10,59 @@ export function App(): React.JSX.Element {
   const [isTesting, setIsTesting] = useState(false)
 
   return (
-    <Container>
-      <Card css={{ pl: '$6' }}>
-        <Card.Body>
-          <Row>
-            <Text>
-              <Trans i18nKey="TopDescription">
-                <Link href="/" />
-              </Trans>
-            </Text>
-          </Row>
-        </Card.Body>
-      </Card>
+    <Container mb="lg" mt="lg" size="xl">
+      <Card withBorder>
+        <Stack>
+          <Text>
+            <Trans i18nKey="TopDescription">
+              <Anchor href="/" />
+            </Trans>
+          </Text>
 
-      <Spacer y={1} />
+          <Stack>
+            <Group>
+              <Title order={3}>
+                <IconBook />️ {t('HowToUseHeader')}
+              </Title>
+            </Group>
 
-      <Card css={{ pl: '$6', pr: '$6' }}>
-        <Card.Body>
-          <Col>
-            <Text h2>
-              <IconBook />️ {t('HowToUseHeader')}
-            </Text>
             <Text>{t('HowToUseDescription')}</Text>
-            <Text blockquote>https://xiv.starry.blue/plugins/master.json</Text>
-          </Col>
+            <Code>https://xiv.starry.blue/plugins/master.json</Code>
+          </Stack>
 
-          <Col>
-            <Text h2>
-              <IconAlertTriangleFilled />️ {t('DisclaimerHeader')}
-            </Text>
+          <Stack>
+            <Group>
+            <Title order={3}>
+                <IconAlertTriangleFilled />️ {t('DisclaimerHeader')}
+              </Title>
+            </Group>
+
             <Text>
               <Trans i18nKey="DisclaimerDescription" />
             </Text>
-          </Col>
-        </Card.Body>
-      </Card>
+          </Stack>
 
-      <Spacer y={1} />
-
-      <Card css={{ pl: '$6' }}>
-        <Card.Body>
-          <Col>
-            <Text h2>
+    <Stack>
+          <Group>
+            <Title order={3}>
               <IconPuzzle />️ {t('PluginListHeader')}
-            </Text>
-            <Text>{t('PluginListDescription')}</Text>
-            <Checkbox isSelected={isTesting} size="sm" onChange={setIsTesting}>
-              {t('PluginListShowTestingVersions')}
-            </Checkbox>
+            </Title>
+          </Group>
 
-            <Suspense
-              fallback={
-                <Row justify="center">
-                  <Loading />
-                </Row>
-              }
-            >
-              <PluginList isTesting={isTesting} />
-            </Suspense>
-          </Col>
-        </Card.Body>
+              <Text>{t('PluginListDescription')}</Text>
+              <Checkbox checked={isTesting} label={t('PluginListShowTestingVersions')} size="sm" onChange={(event) => { setIsTesting(event.currentTarget.checked) }} />
+
+              <Suspense
+                fallback={
+                  <Stack justify="center">
+                    <Loader />
+                  </Stack>
+                }
+              >
+                <PluginList isTesting={isTesting} />
+              </Suspense>
+            </Stack>
+        </Stack>
       </Card>
     </Container>
   )
@@ -85,55 +78,66 @@ export function PluginList({ isTesting }: PluginListProps): React.JSX.Element {
 
   return (
     <Table>
-      <Table.Header>
-        <Table.Column>{t('PluginListTableHeaderName')}</Table.Column>
-        <Table.Column>{t('PluginListTableHeaderDescription')}</Table.Column>
-        <Table.Column>{t('PluginListTableHeaderVersion')}</Table.Column>
-        <Table.Column>{t('PluginListTableHeaderDownloads')}</Table.Column>
-      </Table.Header>
-      <Table.Body>
+      <Table.Thead>
+        <Table.Tr>
+          <Table.Th>{t('PluginListTableHeaderName')}</Table.Th>
+          <Table.Th>{t('PluginListTableHeaderDescription')}</Table.Th>
+          <Table.Th>{t('PluginListTableHeaderVersion')}</Table.Th>
+          <Table.Th>{t('PluginListTableHeaderDownloads')}</Table.Th>
+        </Table.Tr>
+
+      </Table.Thead>
+      <Table.Tbody>
         {plugins
           .sort((a, b) => b.DownloadCount - a.DownloadCount)
           .map((plugin) => (
-            <Table.Row key={plugin.InternalName}>
-              <Table.Cell>
-                <Link
+            <Table.Tr key={plugin.InternalName}>
+              <Table.Td>
+                <Anchor
                   href={`https://github.com/SlashNephy/Divination/tree/master/${plugin.InternalName}`}
                   target="_blank"
                 >
-                  {plugin.InternalName}
-                </Link>
-              </Table.Cell>
-              <Table.Cell>
-                {plugin.Description && (
-                  <>
-                    <p style={{ wordWrap: 'break-word', wordBreak: 'break-all', width: '100%', tableLayout: 'fixed' }}>
+                  <Title order={3}>{plugin.InternalName}</Title>
+                </Anchor>
+              </Table.Td>
+              <Table.Td>
+                <Stack>
+                  {plugin.Description && (
+                    <Text style={{ wordWrap: 'break-word', wordBreak: 'break-all', width: '100%', tableLayout: 'fixed' }}>
                       {plugin.Description}
-                    </p>
-                    <br />
-                  </>
-                )}
-                {plugin.CategoryTags.map((tag) => (
-                  <Badge key={tag} color="secondary" variant="flat">
-                    {tag.charAt(0).toUpperCase() + tag.slice(1)}
-                  </Badge>
-                ))}
-                {plugin.Tags.map((tag) => (
-                  <Badge key={tag} color="primary" variant="flat">
-                    #{tag}
-                  </Badge>
-                ))}
-              </Table.Cell>
-              <Table.Cell>
-                <Link href={isTesting ? plugin.DownloadLinkTesting : plugin.DownloadLinkInstall} target="_blank">
+                    </Text>
+                  )}
+                </Stack>
+
+                <Space h="md" />
+
+                <Group>
+                  {plugin.CategoryTags.map((tag) => (
+                    <Badge key={tag} color="secondary" variant="flat">
+                      {tag.charAt(0).toUpperCase() + tag.slice(1)}
+                    </Badge>
+                  ))}
+                  {plugin.Tags.map((tag) => (
+                    <Badge key={tag} color="primary" variant="flat">
+                      #{tag}
+                    </Badge>
+                  ))}
+                </Group>
+              </Table.Td>
+              <Table.Td>
+                <Stack>
+                <Anchor href={isTesting ? plugin.DownloadLinkTesting : plugin.DownloadLinkInstall} target="_blank">
                   {isTesting ? plugin.TestingAssemblyVersion : plugin.AssemblyVersion}
-                </Link>{' '}
-                (API {plugin.DalamudApiLevel})
-              </Table.Cell>
-              <Table.Cell>{plugin.DownloadCount}</Table.Cell>
-            </Table.Row>
+                </Anchor>
+                <Badge color="orange" variant="dot">
+                API {plugin.DalamudApiLevel}
+                </Badge>
+                </Stack>
+              </Table.Td>
+              <Table.Td>{plugin.DownloadCount}</Table.Td>
+            </Table.Tr>
           ))}
-      </Table.Body>
+      </Table.Tbody>
     </Table>
   )
 }
