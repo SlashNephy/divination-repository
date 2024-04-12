@@ -2915,7 +2915,7 @@ __metadata:
     "@vitejs/plugin-react-swc": "npm:3.6.0"
     concurrently: "npm:8.2.2"
     eslint: "npm:8.57.0"
-    i18next: "npm:23.8.3"
+    i18next: "npm:23.11.1"
     i18next-browser-languagedetector: "npm:7.2.1"
     postcss: "npm:8.4.38"
     postcss-preset-mantine: "npm:1.14.0"
@@ -4669,12 +4669,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:23.8.3":
-  version: 23.8.3
-  resolution: "i18next@npm:23.8.3"
+"i18next@npm:23.11.1":
+  version: 23.11.1
+  resolution: "i18next@npm:23.11.1"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-  checksum: 10/1d23794bb91627bd15a1b1580517f9094da3028a94ad686a8ddbceb034ac2b7e20d3526ea098f644d58c915e35f8f1d7a7226489f226858e9273937ce7422ccb
+  checksum: 10/77ab8618a59b4c02a8c605c21b2a5680c5cb5cb8399e409c214f8ed2486dff785272f1b0682e744d1562ad443fe87913a4cbe9c7ad303e5de541736f2fc1002f
   languageName: node
   linkType: hard
 
