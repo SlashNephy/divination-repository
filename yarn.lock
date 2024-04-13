@@ -2932,7 +2932,7 @@ __metadata:
     i18next: "npm:23.11.1"
     i18next-browser-languagedetector: "npm:7.2.1"
     postcss: "npm:8.4.38"
-    postcss-preset-mantine: "npm:1.14.0"
+    postcss-preset-mantine: "npm:1.14.4"
     postcss-simple-vars: "npm:7.0.1"
     prettier: "npm:3.2.5"
     react: "npm:18.2.0"
@@ -6015,15 +6015,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-preset-mantine@npm:1.14.0":
-  version: 1.14.0
-  resolution: "postcss-preset-mantine@npm:1.14.0"
+"postcss-preset-mantine@npm:1.14.4":
+  version: 1.14.4
+  resolution: "postcss-preset-mantine@npm:1.14.4"
   dependencies:
     postcss-mixins: "npm:^9.0.4"
     postcss-nested: "npm:^6.0.1"
   peerDependencies:
     postcss: ">=8.0.0"
-  checksum: 10/279f3b6ca590ed75a1bf59997c9d9871027377a586627629b758027d4bbb56754500c63c95b5e31405c789ea1f45b5a0a451d0e68805ae2d1485b55644e705cb
+  checksum: 10/9bbb1197ff6dc6d1cf57f1afae7b704a446115cf44e58947ab0a5ebb6b8fca0880b9f81410975ab9a0d996aff39d1daaac377c3962800ab2d006896a4112f370
   languageName: node
   linkType: hard
 
