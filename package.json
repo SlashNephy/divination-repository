@@ -45,8 +45,8 @@
     ]
   },
   "dependencies": {
-    "@mantine/core": "7.9.2",
-    "@mantine/hooks": "7.9.2",
+    "@mantine/core": "7.10.0",
+    "@mantine/hooks": "7.10.0",
     "@tabler/icons-react": "2.47.0",
     "i18next": "23.11.5",
     "i18next-browser-languagedetector": "7.2.1",
