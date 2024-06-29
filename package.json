@@ -47,7 +47,7 @@
   "dependencies": {
     "@mantine/core": "7.11.0",
     "@mantine/hooks": "7.11.0",
-    "@tabler/icons-react": "2.47.0",
+    "@tabler/icons-react": "3.7.0",
     "i18next": "23.11.5",
     "i18next-browser-languagedetector": "7.2.1",
     "react": "18.3.1",
