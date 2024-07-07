@@ -1,13 +1,38 @@
-import { Anchor, Badge, Card, Checkbox, Code, Container, Group, Loader, Space, Stack, Table, Text, Title } from '@mantine/core'
-import { IconAlertTriangleFilled, IconBook, IconPuzzle } from '@tabler/icons-react'
-import React, { Suspense, useState } from 'react'
+import {
+  Anchor,
+  Badge,
+  Card,
+  Checkbox,
+  Code,
+  Container,
+  Group,
+  Loader,
+  Space,
+  Stack,
+  Table,
+  Text,
+  Title,
+} from '@mantine/core'
+import {
+  IconAlertTriangleFilled,
+  IconBook,
+  IconPuzzle,
+} from '@tabler/icons-react'
+import React, { Suspense, useCallback, useState } from 'react'
 import { Trans, useTranslation } from 'react-i18next'
 
 import { usePluginMaster } from './lib/usePluginMaster.ts'
 
+import type { ChangeEventHandler } from 'react'
+
 export function App(): React.JSX.Element {
   const { t } = useTranslation()
   const [isTesting, setIsTesting] = useState(false)
+
+  const handleChangeTestingCheckbox: ChangeEventHandler<HTMLInputElement> =
+    useCallback((event) => {
+      setIsTesting(event.currentTarget.checked)
+    }, [])
 
   return (
     <Container mb="lg" mt="lg" size="xl">
@@ -32,7 +57,7 @@ export function App(): React.JSX.Element {
 
           <Stack>
             <Group>
-            <Title order={3}>
+              <Title order={3}>
                 <IconAlertTriangleFilled />️ {t('DisclaimerHeader')}
               </Title>
             </Group>
@@ -42,26 +67,31 @@ export function App(): React.JSX.Element {
             </Text>
           </Stack>
 
-    <Stack>
-          <Group>
-            <Title order={3}>
-              <IconPuzzle />️ {t('PluginListHeader')}
-            </Title>
-          </Group>
+          <Stack>
+            <Group>
+              <Title order={3}>
+                <IconPuzzle />️ {t('PluginListHeader')}
+              </Title>
+            </Group>
 
-              <Text>{t('PluginListDescription')}</Text>
-              <Checkbox checked={isTesting} label={t('PluginListShowTestingVersions')} size="sm" onChange={(event) => { setIsTesting(event.currentTarget.checked) }} />
+            <Text>{t('PluginListDescription')}</Text>
+            <Checkbox
+              checked={isTesting}
+              label={t('PluginListShowTestingVersions')}
+              size="sm"
+              onChange={handleChangeTestingCheckbox}
+            />
 
-              <Suspense
-                fallback={
-                  <Stack justify="center">
-                    <Loader />
-                  </Stack>
-                }
-              >
-                <PluginList isTesting={isTesting} />
-              </Suspense>
-            </Stack>
+            <Suspense
+              fallback={
+                <Stack justify="center">
+                  <Loader />
+                </Stack>
+              }
+            >
+              <PluginList isTesting={isTesting} />
+            </Suspense>
+          </Stack>
         </Stack>
       </Card>
     </Container>
@@ -85,7 +115,6 @@ export function PluginList({ isTesting }: PluginListProps): React.JSX.Element {
           <Table.Th>{t('PluginListTableHeaderVersion')}</Table.Th>
           <Table.Th>{t('PluginListTableHeaderDownloads')}</Table.Th>
         </Table.Tr>
-
       </Table.Thead>
       <Table.Tbody>
         {plugins
@@ -103,7 +132,14 @@ export function PluginList({ isTesting }: PluginListProps): React.JSX.Element {
               <Table.Td>
                 <Stack>
                   {plugin.Description && (
-                    <Text style={{ wordWrap: 'break-word', wordBreak: 'break-all', width: '100%', tableLayout: 'fixed' }}>
+                    <Text
+                      style={{
+                        wordWrap: 'break-word',
+                        wordBreak: 'break-all',
+                        width: '100%',
+                        tableLayout: 'fixed',
+                      }}
+                    >
                       {plugin.Description}
                     </Text>
                   )}
@@ -126,12 +162,21 @@ export function PluginList({ isTesting }: PluginListProps): React.JSX.Element {
               </Table.Td>
               <Table.Td>
                 <Stack>
-                <Anchor href={isTesting ? plugin.DownloadLinkTesting : plugin.DownloadLinkInstall} target="_blank">
-                  {isTesting ? plugin.TestingAssemblyVersion : plugin.AssemblyVersion}
-                </Anchor>
-                <Badge color="orange" variant="dot">
-                API {plugin.DalamudApiLevel}
-                </Badge>
+                  <Anchor
+                    target="_blank"
+                    href={
+                      isTesting
+                        ? plugin.DownloadLinkTesting
+                        : plugin.DownloadLinkInstall
+                    }
+                  >
+                    {isTesting
+                      ? plugin.TestingAssemblyVersion
+                      : plugin.AssemblyVersion}
+                  </Anchor>
+                  <Badge color="orange" variant="dot">
+                    API {plugin.DalamudApiLevel}
+                  </Badge>
                 </Stack>
               </Table.Td>
               <Table.Td>{plugin.DownloadCount}</Table.Td>

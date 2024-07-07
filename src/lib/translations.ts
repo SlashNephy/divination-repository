@@ -17,7 +17,8 @@ export const english: Translation = {
   TopDescription:
     '<0>xiv.starry.blue</0> is a third-party Dalamud plugin repository that can be used with XIVLauncher.',
   HowToUseHeader: 'How to Use',
-  HowToUseDescription: 'Use the following URL. Drop the URL into your third-party repository list.',
+  HowToUseDescription:
+    'Use the following URL. Drop the URL into your third-party repository list.',
   DisclaimerHeader: 'Disclaimer',
   // eslint-disable-next-line xss/no-mixed-html
   DisclaimerDescription:
@@ -32,9 +33,11 @@ export const english: Translation = {
 }
 
 export const japanese: Translation = {
-  TopDescription: '<0>xiv.starry.blue</0> は XIVLauncher 用の Dalamud プラグインリポジトリです。',
+  TopDescription:
+    '<0>xiv.starry.blue</0> は XIVLauncher 用の Dalamud プラグインリポジトリです。',
   HowToUseHeader: '使い方',
-  HowToUseDescription: 'XIVLauncher で使用できるようにするには、以下のURLをリポジトリ リストに追加してください。',
+  HowToUseDescription:
+    'XIVLauncher で使用できるようにするには、以下のURLをリポジトリ リストに追加してください。',
   DisclaimerHeader: '免責事項',
   // eslint-disable-next-line xss/no-mixed-html
   DisclaimerDescription:

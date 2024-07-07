@@ -2,7 +2,9 @@ import { incrementDownloadCount } from '../../../lib/downloadCount.ts'
 
 import type { Env } from '../../../types/env'
 
-export const onRequest: PagesFunction<Env, 'channel' | 'plugin_id'> = async (context) => {
+export const onRequest: PagesFunction<Env, 'channel' | 'plugin_id'> = async (
+  context
+) => {
   // eslint-disable-next-line @susisu/safe-typescript/no-type-assertion -- 可変長引数ではない
   const channel = context.params.channel as string
   // eslint-disable-next-line @susisu/safe-typescript/no-type-assertion -- 可変長引数ではない
