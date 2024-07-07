@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "include": ["/plugins/*"],
+  "exclude": ["/plugins/master.json"]
+}
