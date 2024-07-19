@@ -1352,9 +1352,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@slashnephy/eslint-config@npm:2.3.83":
-  version: 2.3.83
-  resolution: "@slashnephy/eslint-config@npm:2.3.83"
+"@slashnephy/eslint-config@npm:2.3.84":
+  version: 2.3.84
+  resolution: "@slashnephy/eslint-config@npm:2.3.84"
   dependencies:
     "@emotion/eslint-plugin": "npm:11.11.0"
     "@graphql-eslint/eslint-plugin": "npm:3.20.1"
@@ -1400,7 +1400,7 @@ __metadata:
     yaml-eslint-parser: "npm:1.2.3"
   peerDependencies:
     eslint: ^8
-  checksum: 10/33946e216ed74a44519a0550e0022f04027715964c77af8e4a1289d280b1c1e4348be37fce5fe7702abae2af22dd71254fb818be10255cf88d79e49295cb176b
+  checksum: 10/c4fa601aab5756b6214a7fd09d6d32cf791d6bda4f411ebf7fc25bd8229361c95e527dda7abda42ca7e9ece8996b576f86dcfcf0e4beb9e7e01f93082b276bbd
   languageName: node
   linkType: hard
 
@@ -3006,7 +3006,7 @@ __metadata:
   dependencies:
     "@mantine/core": "npm:7.11.2"
     "@mantine/hooks": "npm:7.11.2"
-    "@slashnephy/eslint-config": "npm:2.3.83"
+    "@slashnephy/eslint-config": "npm:2.3.84"
     "@slashnephy/prettier-config": "npm:1.0.73"
     "@tabler/icons-react": "npm:2.47.0"
     "@types/react": "npm:18.3.3"
