@@ -1039,9 +1039,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/core@npm:7.12.2":
-  version: 7.12.2
-  resolution: "@mantine/core@npm:7.12.2"
+"@mantine/core@npm:7.13.0":
+  version: 7.13.0
+  resolution: "@mantine/core@npm:7.13.0"
   dependencies:
     "@floating-ui/react": "npm:^0.26.9"
     clsx: "npm:^2.1.1"
@@ -1050,19 +1050,19 @@ __metadata:
     react-textarea-autosize: "npm:8.5.3"
     type-fest: "npm:^4.12.0"
   peerDependencies:
-    "@mantine/hooks": 7.12.2
+    "@mantine/hooks": 7.13.0
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 10/1c227fcc01d5c900f3ffac5d5673232956f58ef4f36e1b004082b29b0c472988f10051776bd7d54642ceaa7e6c4f01fbe3565d16c3bcd3001445001d4ec7fd13
+  checksum: 10/e46d3631321a40996849a08300413d14567cbfb28a398d9fd27894a9d252cc3ea2d551061a53cdc71018d5e1f8708278a953bc5918796f5a1df5a4878fee028c
   languageName: node
   linkType: hard
 
-"@mantine/hooks@npm:7.12.2":
-  version: 7.12.2
-  resolution: "@mantine/hooks@npm:7.12.2"
+"@mantine/hooks@npm:7.13.0":
+  version: 7.13.0
+  resolution: "@mantine/hooks@npm:7.13.0"
   peerDependencies:
     react: ^18.2.0
-  checksum: 10/a2ac4119c2a4579005f735b68ce7c161eeeeda9cb37d715e8f7e9ef2cdf3231d7f46089aff5adde81a1a1906b678b742060cccfdeb1bf3fa079ccbdfea47d7bc
+  checksum: 10/d7fff628c6ed4dd3a69f0acd3b592496d56c788120d907534c90e009032d54667d19703e0d955437c83b0910ae33376f460beb6b2130fa82aefaa6a1b289f41a
   languageName: node
   linkType: hard
 
@@ -2967,8 +2967,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "divination-repository@workspace:."
   dependencies:
-    "@mantine/core": "npm:7.12.2"
-    "@mantine/hooks": "npm:7.12.2"
+    "@mantine/core": "npm:7.13.0"
+    "@mantine/hooks": "npm:7.13.0"
     "@slashnephy/eslint-config": "npm:2.3.118"
     "@slashnephy/prettier-config": "npm:1.0.73"
     "@tabler/icons-react": "npm:2.47.0"
