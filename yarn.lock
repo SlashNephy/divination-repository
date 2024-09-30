@@ -1514,7 +1514,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core@npm:^1.5.7":
+"@swc/core@npm:^1.7.26":
   version: 1.7.28
   resolution: "@swc/core@npm:1.7.28"
   dependencies:
@@ -2072,14 +2072,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-react-swc@npm:3.7.0":
-  version: 3.7.0
-  resolution: "@vitejs/plugin-react-swc@npm:3.7.0"
+"@vitejs/plugin-react-swc@npm:3.7.1":
+  version: 3.7.1
+  resolution: "@vitejs/plugin-react-swc@npm:3.7.1"
   dependencies:
-    "@swc/core": "npm:^1.5.7"
+    "@swc/core": "npm:^1.7.26"
   peerDependencies:
     vite: ^4 || ^5
-  checksum: 10/16498c65aca482f638f490a59c4ef49875e59d4f1631dad7515e2fce2f87a69a4ec0cd9774fc3666b8a6e211f65b78442411a743aea33762caa0044e3c04ad39
+  checksum: 10/e86c1424998e0d249edb9b22ea38fbf4d26732e6732789cefcd8754c04140b0cfed4f1b22e8c755a1b04d21b32d61557e995d49cad41176865461951b113cfbc
   languageName: node
   linkType: hard
 
@@ -2963,7 +2963,7 @@ __metadata:
     "@tabler/icons-react": "npm:2.47.0"
     "@types/react": "npm:18.3.10"
     "@types/react-dom": "npm:18.3.0"
-    "@vitejs/plugin-react-swc": "npm:3.7.0"
+    "@vitejs/plugin-react-swc": "npm:3.7.1"
     concurrently: "npm:9.0.1"
     eslint: "npm:8.57.1"
     i18next: "npm:23.15.1"
