@@ -1,3 +1,3 @@
-export const onRequest: PagesFunction<Env> = async (context) => {
+export const onRequest: PagesFunction = async () => {
   return Response.redirect("https://github.com/SlashNephy/Divination", 301)
 }
