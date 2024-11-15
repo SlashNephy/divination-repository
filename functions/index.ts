@@ -1,3 +1,3 @@
 export const onRequest: PagesFunction = () => {
-  return Response.redirect("https://github.com/SlashNephy/Divination", 301)
+  return Response.redirect('https://github.com/SlashNephy/Divination', 301)
 }
