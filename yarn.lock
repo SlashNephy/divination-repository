@@ -88,7 +88,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.23.2":
+"@babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.25.0":
   version: 7.26.0
   resolution: "@babel/runtime@npm:7.26.0"
   dependencies:
@@ -2964,7 +2964,7 @@ __metadata:
     prettier: "npm:3.4.2"
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
-    react-i18next: "npm:13.5.0"
+    react-i18next: "npm:15.1.4"
     swr: "npm:2.2.5"
     tailwindcss: "npm:3.4.16"
     typescript: "npm:5.7.2"
@@ -6224,11 +6224,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-i18next@npm:13.5.0":
-  version: 13.5.0
-  resolution: "react-i18next@npm:13.5.0"
+"react-i18next@npm:15.1.4":
+  version: 15.1.4
+  resolution: "react-i18next@npm:15.1.4"
   dependencies:
-    "@babel/runtime": "npm:^7.22.5"
+    "@babel/runtime": "npm:^7.25.0"
     html-parse-stringify: "npm:^3.0.1"
   peerDependencies:
     i18next: ">= 23.2.3"
@@ -6238,7 +6238,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 10/903b486d112cd0aa40bdc3afaefd0c32b91c0a1e3e3561367c8d91ddc0fbad9945f1d630c3ddcd4764795fc00e0887252e2d337256a825caf3a86de038f6b2db
+  checksum: 10/24fa385431c48ca58007c1284c1e59e928e3f90d2d9ea4347cd345794663d0e9f5c29351e733cba4bccfdca93887c863b6dbefd0b43c347fbca2b608c22b095d
   languageName: node
   linkType: hard
 
