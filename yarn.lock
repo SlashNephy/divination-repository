@@ -1599,22 +1599,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tabler/icons-react@npm:2.47.0":
-  version: 2.47.0
-  resolution: "@tabler/icons-react@npm:2.47.0"
+"@tabler/icons-react@npm:3.26.0":
+  version: 3.26.0
+  resolution: "@tabler/icons-react@npm:3.26.0"
   dependencies:
-    "@tabler/icons": "npm:2.47.0"
-    prop-types: "npm:^15.7.2"
+    "@tabler/icons": "npm:3.26.0"
   peerDependencies:
-    react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: 10/8e3cb9ff71d443f31569176f8d10c55bfdc53d5a762c8133472b8729d8d135380161a7af2cba6ac22b1416030326cf363e33467f5e314933526d8efa34feb222
+    react: ">= 16"
+  checksum: 10/3b6ce30eb9433a2574b36d3bbe8879c1d8fdcbafbe762318861f1265a1dbe048ab4ea763a27fe666bccf2733347c42b8ca2fa54bea3eb71240bcbb9789cbf744
   languageName: node
   linkType: hard
 
-"@tabler/icons@npm:2.47.0":
-  version: 2.47.0
-  resolution: "@tabler/icons@npm:2.47.0"
-  checksum: 10/1bf27e9c1fecdd6a80f8ff94e89c49890ae85ca0baf91fe3b28f9325a54a509281a5859beb0197f1833ba58a2af71c9ebaf025ad37f0e562d305982812d1de13
+"@tabler/icons@npm:3.26.0":
+  version: 3.26.0
+  resolution: "@tabler/icons@npm:3.26.0"
+  checksum: 10/902b7494079cfd135e21b0984ee2a75825d2af7f30db3254b3683b11b08192aa4331d74b0d7f24e19e9948e5d8a70a3f08276e109e61b5dc9ae2c32d1e41031c
   languageName: node
   linkType: hard
 
@@ -2936,7 +2935,7 @@ __metadata:
     "@mantine/hooks": "npm:7.15.1"
     "@slashnephy/eslint-config": "npm:2.3.158"
     "@slashnephy/prettier-config": "npm:1.0.73"
-    "@tabler/icons-react": "npm:2.47.0"
+    "@tabler/icons-react": "npm:3.26.0"
     "@types/react": "npm:18.3.18"
     "@types/react-dom": "npm:18.3.5"
     "@vitejs/plugin-react-swc": "npm:3.7.2"
@@ -6137,7 +6136,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
