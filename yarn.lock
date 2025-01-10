@@ -1044,30 +1044,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/core@npm:7.15.2":
-  version: 7.15.2
-  resolution: "@mantine/core@npm:7.15.2"
+"@mantine/core@npm:7.15.3":
+  version: 7.15.3
+  resolution: "@mantine/core@npm:7.15.3"
   dependencies:
     "@floating-ui/react": "npm:^0.26.28"
     clsx: "npm:^2.1.1"
-    react-number-format: "npm:^5.4.2"
-    react-remove-scroll: "npm:^2.6.0"
+    react-number-format: "npm:^5.4.3"
+    react-remove-scroll: "npm:^2.6.2"
     react-textarea-autosize: "npm:8.5.6"
     type-fest: "npm:^4.27.0"
   peerDependencies:
-    "@mantine/hooks": 7.15.2
+    "@mantine/hooks": 7.15.3
     react: ^18.x || ^19.x
     react-dom: ^18.x || ^19.x
-  checksum: 10/21a9337235d78910af65fb48527abf6ffff6886e8832dab11c805515e2f657eecbfe9127414680bdf4d7167520bbd9ee32685d78d22fd5efe339ddb1482e6765
+  checksum: 10/d9f4e47d6e72c731f9d69062f91d482b0b87d44831f527d1317dff86fad919f8582bcf1ae871865413ba0336ea70228993f3d43ce9c7c3ecf4e00caf0ad20c76
   languageName: node
   linkType: hard
 
-"@mantine/hooks@npm:7.15.2":
-  version: 7.15.2
-  resolution: "@mantine/hooks@npm:7.15.2"
+"@mantine/hooks@npm:7.15.3":
+  version: 7.15.3
+  resolution: "@mantine/hooks@npm:7.15.3"
   peerDependencies:
     react: ^18.x || ^19.x
-  checksum: 10/abccce939ac05f1e77e1f2fde33de1c80cf13dbc5693c5d78420178d09671b1e708f3f355346f261c654726a212f3755a17ad6d1e1493d215112117eed28b673
+  checksum: 10/f2d6880ab087aebfb5aa61984bad3379a6fa9f668a2602d50c4822a87058138361fca63703f19824f1f34d30680e5fbabbf5199643775844e1be5fb73baae9be
   languageName: node
   linkType: hard
 
@@ -2820,8 +2820,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "divination-repository@workspace:."
   dependencies:
-    "@mantine/core": "npm:7.15.2"
-    "@mantine/hooks": "npm:7.15.2"
+    "@mantine/core": "npm:7.15.3"
+    "@mantine/hooks": "npm:7.15.3"
     "@slashnephy/eslint-config": "npm:2.3.167"
     "@slashnephy/prettier-config": "npm:1.0.73"
     "@tabler/icons-react": "npm:2.47.0"
@@ -6142,7 +6142,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-number-format@npm:^5.4.2":
+"react-number-format@npm:^5.4.3":
   version: 5.4.3
   resolution: "react-number-format@npm:5.4.3"
   peerDependencies:
@@ -6168,7 +6168,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-remove-scroll@npm:^2.6.0":
+"react-remove-scroll@npm:^2.6.2":
   version: 2.6.2
   resolution: "react-remove-scroll@npm:2.6.2"
   dependencies:
