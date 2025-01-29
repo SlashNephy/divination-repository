@@ -2870,7 +2870,7 @@ __metadata:
     react-dom: "npm:18.3.1"
     react-i18next: "npm:13.5.0"
     swr: "npm:2.3.0"
-    tailwindcss: "npm:4.0.0"
+    tailwindcss: "npm:4.0.1"
     typescript: "npm:5.7.3"
     vite: "npm:6.0.11"
   languageName: unknown
@@ -6973,10 +6973,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:4.0.0":
-  version: 4.0.0
-  resolution: "tailwindcss@npm:4.0.0"
-  checksum: 10/3491d86a7c3ad08209eb988fcf36d893e5f5a4c48c63da706a8788f6111e141386e1b5c8fa46f2650b08200c1b8011251d97b6d65514bdc14aa06597871d1f7d
+"tailwindcss@npm:4.0.1":
+  version: 4.0.1
+  resolution: "tailwindcss@npm:4.0.1"
+  checksum: 10/52cad83ef17873f00f90f7cb68d833001ed06924c43b3013f1b0497eb8778160302fc4cf5e09675c48c134dd48ce27571b4bb961f0df67ea6d7d6d368a3f807c
   languageName: node
   linkType: hard
 
