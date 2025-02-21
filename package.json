@@ -63,7 +63,7 @@
     "@vitejs/plugin-react-swc": "3.8.0",
     "concurrently": "9.1.2",
     "eslint": "8.57.1",
-    "postcss": "8.5.2",
+    "postcss": "8.5.3",
     "postcss-preset-mantine": "1.17.0",
     "postcss-simple-vars": "7.0.1",
     "prettier": "3.5.1",
