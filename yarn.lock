@@ -81,7 +81,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.23.2":
+"@babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.26.10":
   version: 7.27.0
   resolution: "@babel/runtime@npm:7.27.0"
   dependencies:
@@ -3342,7 +3342,7 @@ __metadata:
     "@vitejs/plugin-react-swc": "npm:3.8.1"
     concurrently: "npm:9.1.2"
     eslint: "npm:8.57.1"
-    i18next: "npm:23.16.8"
+    i18next: "npm:25.0.0"
     i18next-browser-languagedetector: "npm:7.2.2"
     postcss: "npm:8.5.3"
     postcss-preset-mantine: "npm:1.17.0"
@@ -5171,12 +5171,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:23.16.8":
-  version: 23.16.8
-  resolution: "i18next@npm:23.16.8"
+"i18next@npm:25.0.0":
+  version: 25.0.0
+  resolution: "i18next@npm:25.0.0"
   dependencies:
-    "@babel/runtime": "npm:^7.23.2"
-  checksum: 10/d5c38011de4d3b4aa466fac6773520eb28007b9d6138e03432bfbfc0d041c04df45e15c67d96f22cd660088cc9b24d3eda32cddc9fb4c6508c5afada6c2e6290
+    "@babel/runtime": "npm:^7.26.10"
+  peerDependencies:
+    typescript: ^5
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10/49fc1bb94661a1253f0decb837fa4ad7b26a09e04dacf29e453bd396ba9c05a5bc38575133a4a893b0b65da143ad0493867d2e2c41a4d3d10f9fce4b71c45fc0
   languageName: node
   linkType: hard
 
