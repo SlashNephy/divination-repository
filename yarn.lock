@@ -3343,7 +3343,7 @@ __metadata:
     concurrently: "npm:9.1.2"
     eslint: "npm:8.57.1"
     i18next: "npm:23.16.8"
-    i18next-browser-languagedetector: "npm:7.2.2"
+    i18next-browser-languagedetector: "npm:8.0.5"
     postcss: "npm:8.5.3"
     postcss-preset-mantine: "npm:1.17.0"
     postcss-simple-vars: "npm:7.0.1"
@@ -5162,12 +5162,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next-browser-languagedetector@npm:7.2.2":
-  version: 7.2.2
-  resolution: "i18next-browser-languagedetector@npm:7.2.2"
+"i18next-browser-languagedetector@npm:8.0.5":
+  version: 8.0.5
+  resolution: "i18next-browser-languagedetector@npm:8.0.5"
   dependencies:
     "@babel/runtime": "npm:^7.23.2"
-  checksum: 10/6f6dd5db3e83c2ed3b24d7fb754d0c41fd2056a0f06fb3d2a4604541c6ee0031d3f2cbbcfad726bbfc9741bcbbd6cde3acf94d339d600b6d9f49f0bbe51179d9
+  checksum: 10/536b7ad6faa2dc7bb64294466372119f02299701f70aa6875c846ed147c478df71c07706dd3e49fb7686186c88af4e66942eb083490405244faba2a959273e4b
   languageName: node
   linkType: hard
 
