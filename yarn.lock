@@ -81,7 +81,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.23.2":
+"@babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.26.10":
   version: 7.27.1
   resolution: "@babel/runtime@npm:7.27.1"
   checksum: 10/34cefcbf781ea5a4f1b93f8563327b9ac82694bebdae91e8bd9d7f58d084cbe5b9a6e7f94d77076e15b0bcdaa0040a36cb30737584028df6c4673b4c67b2a31d
@@ -3347,7 +3347,7 @@ __metadata:
     "@vitejs/plugin-react-swc": "npm:3.9.0"
     concurrently: "npm:9.1.2"
     eslint: "npm:8.57.1"
-    i18next: "npm:23.16.8"
+    i18next: "npm:25.1.2"
     i18next-browser-languagedetector: "npm:7.2.2"
     postcss: "npm:8.5.3"
     postcss-preset-mantine: "npm:1.17.0"
@@ -5176,12 +5176,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:23.16.8":
-  version: 23.16.8
-  resolution: "i18next@npm:23.16.8"
+"i18next@npm:25.1.2":
+  version: 25.1.2
+  resolution: "i18next@npm:25.1.2"
   dependencies:
-    "@babel/runtime": "npm:^7.23.2"
-  checksum: 10/d5c38011de4d3b4aa466fac6773520eb28007b9d6138e03432bfbfc0d041c04df45e15c67d96f22cd660088cc9b24d3eda32cddc9fb4c6508c5afada6c2e6290
+    "@babel/runtime": "npm:^7.26.10"
+  peerDependencies:
+    typescript: ^5
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10/40000d98969c5c76d4271b5ac3fedddc42482717961488bd2d595dc675f1a620f4f29f5f1d7f49c8c8ed4697faa911cfffa31360119a2fbbaf4b92f6dfc587c3
   languageName: node
   linkType: hard
 
