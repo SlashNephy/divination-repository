@@ -4811,7 +4811,7 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": "npm:4.20250327.0"
     typescript: "npm:5.8.3"
-    wrangler: "npm:4.18.0"
+    wrangler: "npm:4.19.1"
   languageName: unknown
   linkType: soft
 
@@ -5911,9 +5911,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:4.20250525.0":
-  version: 4.20250525.0
-  resolution: "miniflare@npm:4.20250525.0"
+"miniflare@npm:4.20250525.1":
+  version: 4.20250525.1
+  resolution: "miniflare@npm:4.20250525.1"
   dependencies:
     "@cspotcode/source-map-support": "npm:0.8.1"
     acorn: "npm:8.14.0"
@@ -5929,7 +5929,7 @@ __metadata:
     zod: "npm:3.22.3"
   bin:
     miniflare: bootstrap.js
-  checksum: 10/84c34e469e84917573c76c29fe42ec621cc83409421658293496386c97d7d136f4ba1d046881327a2466ef2068d3339603d473b0edbc0669f39e98f3b67248df
+  checksum: 10/9f042add1b8a4490aed8041194413724a114ee561ae8f696f1528a1aed45324d29ea37e26423499f2cf9081c7dbd3870ba40c892e14bf6fb203e2320cd9c6434
   languageName: node
   linkType: hard
 
@@ -8369,16 +8369,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:4.18.0":
-  version: 4.18.0
-  resolution: "wrangler@npm:4.18.0"
+"wrangler@npm:4.19.1":
+  version: 4.19.1
+  resolution: "wrangler@npm:4.19.1"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.4.0"
     "@cloudflare/unenv-preset": "npm:2.3.2"
     blake3-wasm: "npm:2.1.5"
     esbuild: "npm:0.25.4"
     fsevents: "npm:~2.3.2"
-    miniflare: "npm:4.20250525.0"
+    miniflare: "npm:4.20250525.1"
     path-to-regexp: "npm:6.3.0"
     unenv: "npm:2.0.0-rc.17"
     workerd: "npm:1.20250525.0"
@@ -8393,7 +8393,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/e946a3bebb522f865ebf569821d9c1c6a92657ffdaf483b95d326b152ae5d9b38d0ca318e3493f6d8c5b63e7bf81015800ef14e69b10e1296563ad68d48531dd
+  checksum: 10/81d28b72bd577b3293d69d45871576a874d8b4da83d1d022b7ae1db3055e63884854ba8b6242b749c755d1be1718836cd7ddd8c60a1e994c54099bf682cea910
   languageName: node
   linkType: hard
 
