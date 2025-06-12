@@ -81,7 +81,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.23.2":
+"@babel/runtime@npm:^7.20.13, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.27.6":
   version: 7.27.6
   resolution: "@babel/runtime@npm:7.27.6"
   checksum: 10/cc957a12ba3781241b83d528eb69ddeb86ca5ac43179a825e83aa81263a6b3eb88c57bed8a937cdeacfc3192e07ec24c73acdfea4507d0c0428c8e23d6322bfe
@@ -3396,7 +3396,7 @@ __metadata:
     prettier: "npm:3.5.3"
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
-    react-i18next: "npm:13.5.0"
+    react-i18next: "npm:15.5.3"
     swr: "npm:2.3.3"
     tailwindcss: "npm:4.1.8"
     typescript: "npm:5.8.3"
@@ -6650,21 +6650,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-i18next@npm:13.5.0":
-  version: 13.5.0
-  resolution: "react-i18next@npm:13.5.0"
+"react-i18next@npm:15.5.3":
+  version: 15.5.3
+  resolution: "react-i18next@npm:15.5.3"
   dependencies:
-    "@babel/runtime": "npm:^7.22.5"
+    "@babel/runtime": "npm:^7.27.6"
     html-parse-stringify: "npm:^3.0.1"
   peerDependencies:
     i18next: ">= 23.2.3"
     react: ">= 16.8.0"
+    typescript: ^5
   peerDependenciesMeta:
     react-dom:
       optional: true
     react-native:
       optional: true
-  checksum: 10/903b486d112cd0aa40bdc3afaefd0c32b91c0a1e3e3561367c8d91ddc0fbad9945f1d630c3ddcd4764795fc00e0887252e2d337256a825caf3a86de038f6b2db
+    typescript:
+      optional: true
+  checksum: 10/7e93c2fe408c0a56ce57be4ff87d8cbf58ea181380d4b366f73142e45ddc10b3a435feb76447ad3c5e5320e7fc10d61596113405e89b97bc23e140613f5b19a4
   languageName: node
   linkType: hard
 
