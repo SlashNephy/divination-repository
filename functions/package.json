@@ -12,7 +12,7 @@
     "typescript": "5.9.2",
     "wrangler": "4.32.0"
   },
-  "packageManager": "yarn@4.9.3",
+  "packageManager": "yarn@4.9.4",
   "engines": {
     "node": ">=18"
   }
