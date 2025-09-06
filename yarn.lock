@@ -188,10 +188,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:4.20250620.0":
-  version: 4.20250620.0
-  resolution: "@cloudflare/workers-types@npm:4.20250620.0"
-  checksum: 10/782014fce3917fcf17ffbc0c4d43444cf1759fa9602dc105e7f30e640c38fce4832e6346bf06ac39f93561f0f355d4528a8f461d04070d9567f2bcc616513964
+"@cloudflare/workers-types@npm:4.20250906.0":
+  version: 4.20250906.0
+  resolution: "@cloudflare/workers-types@npm:4.20250906.0"
+  checksum: 10/89fec245831b65e1124ebb0e891acd7ff4fa39907463cb4c7a1555f67c7d616075e7c24ada3323545021faa5c1bf6f1bc4df97d8f6d8a400bed3d13a0c744ed4
   languageName: node
   linkType: hard
 
@@ -4904,7 +4904,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "functions@workspace:functions"
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20250620.0"
+    "@cloudflare/workers-types": "npm:4.20250906.0"
     typescript: "npm:5.9.2"
     wrangler: "npm:4.33.1"
   languageName: unknown
