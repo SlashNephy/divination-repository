@@ -68,7 +68,7 @@
     "postcss-simple-vars": "7.0.1",
     "prettier": "3.6.2",
     "tailwindcss": "4.1.13",
-    "typescript": "5.9.2",
+    "typescript": "5.9.3",
     "vite": "7.1.7"
   },
   "packageManager": "yarn@4.10.3",
